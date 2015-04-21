@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery updown</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <script id="address-template" type="text/x-handlebars-template">
+      {{#each data.children}}
+        <h3>{{data.title}}</h3>
+        <p>{{data.url}}</p>
+        <h6>{{data.ups}}</h6>
+      {{/each}}
+
+    </script>
+
+    <!--Your new content will be displayed in here-->
+    <div class="output"></div>
+
+  </body>
+
+</html>
